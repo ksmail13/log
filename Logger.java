@@ -23,6 +23,8 @@ public class Logger {
         logging(message, System.err, t);
     }
 
+    public static void errorLogging(String message) {logging(message, System.err, null);}
+
     public static void logging(String message, Throwable e) {
         logging(message, System.out, e);
     }
